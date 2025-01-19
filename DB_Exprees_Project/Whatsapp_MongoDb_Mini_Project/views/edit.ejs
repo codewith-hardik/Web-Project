@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Chat</title>
+    <style>
+        body{
+            margin: 30px;
+            background: hsla(18, 76%, 85%, 1);
+
+            background: linear-gradient(90deg, hsla(18, 76%, 85%, 1) 0%, hsla(203, 69%, 84%, 1) 100%);
+            
+            background: -moz-linear-gradient(90deg, hsla(18, 76%, 85%, 1) 0%, hsla(203, 69%, 84%, 1) 100%);
+            
+            background: -webkit-linear-gradient(90deg, hsla(18, 76%, 85%, 1) 0%, hsla(203, 69%, 84%, 1) 100%);
+            
+            filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F6CFBE", endColorstr="#B9DCF2", GradientType=1 );
+        }
+        .msg{
+            background-color: #3C98A0;
+            color: white;
+            margin: 5px;
+            border:  2px solid #5a189a;
+            font-size: larger;
+            padding: 5px 15px;
+            border-radius: 16px;
+        }
+        .success{
+            background-color: #065a60;
+            border-radius: 5px;
+            border: 2px solid #4d194d;
+            color: #ff9e00 ;
+            font-size: larger;
+            padding: 2px 5px;
+            width: 100px;
+            height: 40px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 style="color:green;"><u>Edit Your Chat...</u></h1><hr>
+    <h2 style="color: darkmagenta;">This chat Was sent from <u><%= chat.from %></u> to <u><%= chat.to %></u></h2>
+    <form action="/chats/<%= chat._id %>?_method=PUT" method="post">
+        <textarea name="msg" class="msg" rows="7" cols="50"><%= chat.msg %></textarea><br><br>
+        <button class="success">Edit</button>
+    </form>
+</body>
+</html>

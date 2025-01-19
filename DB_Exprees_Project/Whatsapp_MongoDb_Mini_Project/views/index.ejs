@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/WhatAppIcon.png.png">
+    <title>Mini Whatsapp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <dir class=" icon"> <h1><img src="https://static.vecteezy.com/system/resources/previews/016/716/468/original/whatsapp-icon-free-png.png" alt="WhatsappIcon" >Whatsapp</h1></dir>
+   
+    <hr>
+    <form action="/chats/new" method="get">
+        <button class="btn">New Chat</button>
+    </form>
+    <hr>
+
+    <%  for(let chat of chats){   %> 
+        <div class="chat">
+            <div class="from"><p>From: <i><%= chat.from %></i></p></div>
+            
+            <div class="msg">
+                <p><%= chat.msg %></p>
+                
+                <form action="/chats/<%= chat._id %>/edit" method="get">
+                    <button class="editbtn"> Edit </button>
+                </form><br>
+                <form action="/chats/<%= chat._id %>/delete?_method=DELETE" method="post">
+                    <button class="delbtn"> Delete</button>
+                </form>
+            </div>
+            <div class="to"> <p>Received by :- <i><%= chat.to %></i></p></div>
+           
+            <hr>
+        <p>Time :-<%= chat.created_at.toString().split(" ")[4] %></p>
+        <p>Date :-<%= chat.created_at.toString().split(" ").slice(0,4).join("-") %></p>
+      
+        </div>
+        <hr>
+     <% }  %> 
+</body>
+</html>
+

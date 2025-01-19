@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post in Detail</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h2>Hear Is your Post In Detail</h2>
+    <h3>Post ID : <%= post.id %></h3>
+    <div class="post">
+        <h3 class="user">@<%= post.username%></h3>
+        <h5 class="content"><%= post.content%></h5>
+    </div>
+
+    <br>
+    <a href="http://localhost:8080/posts">All Posts</a>
+</body>
+</html>

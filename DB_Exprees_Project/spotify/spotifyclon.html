@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Spotifyicon -->
+    <link rel="icon" href="./assets/logo.png" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- style sheet -->
+    <link rel="stylesheet" href="spotifyclon.css" />
+    <title>Spotify</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="sidbar">
+        <div class="nav">
+            <div class="nav-option" style="opacity: 1;">
+                <i class="fa-solid fa-house"></i>
+                <a href="#" >Home</a>
+            </div>
+            <div class="nav-option">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="#" >Search</a>
+            </div>
+        </div>
+        <div class="library">
+            <div class="options ">
+                <div class="lib-option nav-option">
+                    <img src="./assets/library_icon.png" alt="library">
+                    <a href="#" >Your library</a>
+                </div>
+                <div class="icons">
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+            <div class="lib-box">
+              <div class="box">
+                <p class="box-1">Create your first playlist</p>
+                <p class="box-2"> It's easy,we'll help your</p>
+                <button class="badge">Create Playlist</button>
+              </div>
+              <div class="box" style="height: 160px;">
+                <p class="box-1">Let's find some poscasts to follow</p>
+                <p class="box-2"> We'll keep you updated on new episodes</p>
+                <button class="badge">Browse podcasts</button>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="main-contant">
+        <div class="sticky-nav">
+          <div class="sticky-nav-icons">
+            <img src="./assets/backward_icon.png" alt="backward_icon">
+            <img src="./assets/forward_icon.png " id="hide" alt="forward_icon">
+          </div>
+          <div class="sticky-nav-option">
+            <button class="badge nav-item " id="hide">Explore Premium </button>
+            <button class="badge nav-item dark-badge" ><i class="fa-regular fa-circle-down" style="margin-right: 5px;"></i>Install app</button>
+            <i class="fa-regular fa-user nav-item user"></i>
+          </div>
+        </div>
+    
+          <h2 style="font-weight: 900;">Most Like Hot Hist Hindi</h2>
+          <div class="cards-container">
+            <div class="card">
+              <img src="./assets/pathaan.jpeg" alt="card1" class="card-img">
+              <p class="card-title">Pathaan</p>
+              <p class="card-info">Pathaan All Song 2024</p>
+            </div>
+
+            <div class="card">
+              <img src="./assets/stree2.jpg" alt="card1" class="card-img">
+              <p class="card-title">Stree 2</p>
+              <p class="card-info">  
+                Every track you're listening/should be listening Cover- Stree 2 - 2024</p>
+            </div>
+
+            <div class="card">
+              <img src="./assets/pushpa.jpg" alt="card1" class="card-img">
+              <p class="card-title">Pushpa</p>
+              <p class="card-info">Angaaron("From Puspa 2")- 2024</p>
+            </div>
+
+            <div class="card">
+              <img src="./assets/bed-news.jpg" alt="card1" class="card-img">
+              <p class="card-title">Bed News</p>
+              <p class="card-info">Mere Mehboob Mere Sanam -2024</p>
+            </div>
+          </div>
+
+          <h2 style="font-weight: 900;">Recentlyn Played</h2>
+          <div class="cards-container">
+            <div class="card">
+              <img src="./assets/kalki.jpg" alt="card1" class="card-img">
+              <p class="card-title">Kalki</p>
+              <p class="card-info">Senthosh Narayanan</p>
+            </div>
+
+            <div class="card">
+              <img src="./assets/gadar2.jpg" alt="card1" class="card-img">
+              <p class="card-title">Gadar 2</p>
+              <p class="card-info">Gadar 2 movie ,gadar film songs, gadar songs, Gadar 2 new songs 2024, Gadar All songs 2024</p>
+            </div>
+
+            <div class="card">
+              <img src="./assets/jawan.jpg" alt="card1" class="card-img">
+              <p class="card-title">Jawan</p>
+              <p class="card-info">Jawan movie all songs,Chaleya, Shahrukh khan latest songs, SRK new songs | Romantic Songs</p>
+            </div>
+
+            <div class="card">
+              <img src="./assets/crew.jpg" alt="card1" class="card-img">
+              <p class="card-title">Crew </p>
+              <p class="card-info">Crew, Crew songs, Ghagra,Karina Kapoor, Kriti senon, Tabu, Choli ke piche kya hai, Naina,Sona kitna sona hai,Kiddan Zaalima, Khwabida, Darbadar</p>
+            </div>
+          </div>
+
+          
+
+
+          <h2 style="font-weight: 900;">Popular Audio</h2>
+          <div class="cards-container">
+            <div class="card">
+              <img src="./assets/arjit singh.jpeg" alt="card1" class="card-img">
+              <p class="card-title">Arjit Singh </p>
+              <p class="card-info">With Sachin-Jigar, Mithoon, Pritam and more</p>
+            </div>
+
+            <div class="card">
+              <img src="./assets/kishore kumar.jpeg" alt="card1" class="card-img">
+              <p class="card-title">Kishore Kumar</p>
+              <p class="card-info">  
+                With Mohammed Rafi, Asha Bhosle, Mukesh and more</p>
+            </div>
+
+            <div class="card">
+              <img src="./assets/A.R.Rahman.jpeg" alt="card1" class="card-img">
+              <p class="card-title">A.R.Rahman</p>
+              <p class="card-info">With Anirudh Ravichander, Harris Jayaraj, G. V. Prakash and more</p>
+            </div>
+
+            <div class="card">
+              <img src="./assets/Shreya Ghoshal.jpeg" alt="card1" class="card-img">
+              <p class="card-title">A.R.Rahman</p>
+              <p class="card-info">With A.R. Rahman, Vishal-Shekhar, Sachin-Jigar and more</p>
+            </div>
+          </div>
+          
+
+          <h2 style="font-weight: 900;">Popular Album</h2>
+          <div class="cards-container">
+            <div class="card">
+              <img src="./assets/aashiqui-2.jpg" alt="card1" class="card-img">
+              <p class="card-title">Aashqiui 2 </p>
+              <p class="card-info">Tum Hi Ho-Arijit Singh.
+                Chahun Main Ya Naa. Palak Muchhal, Arijit Singh.
+                
+                </p>
+            </div>
+
+            <div class="card">
+              <img src="./assets/animal.jpg" alt="card1" class="card-img">
+              <p class="card-title">Animal</p>
+              <p class="card-info">  
+                Animal movie all songs at one place, Animal Park, Animal park,  Trending Songs</p>
+            </div>
+
+            <div class="card">
+              <img src="./assets/mr&mrs Mahi.jpg" alt="card1" class="card-img">
+              <p class="card-title">Me & Mss Mahi</p>
+              <p class="card-info">This Playlist contains Romantic Songs of Bollywood and other artists. Save and Follow for more Songs 💕</p>
+            </div>
+
+            <div class="card">
+              <img src="./assets/hamari adhuri kahani.jpg" alt="card1" class="card-img">
+              <p class="card-title">Hamari Adhuri Kahani</p>
+              <p class="card-info">Original Motion Picture... Jeet Gannguli , Arjit Singh . Papon ,Mithoon</p>
+            </div>
+          </div>
+          
+          <h2 style="font-weight: 900;">Trending new near you</h2>
+          <div class="cards-container">
+            <div class="card">
+              <img src="./assets/card2img.jpeg" alt="card1" class="card-img">
+              <p class="card-title">Top 50 - Global</p>
+              <p class="card-info">Your daily updates of the most played tracks....</p>
+            </div>
+
+            <div class="card">
+              <img src="./assets/card3img.jpeg" alt="card1" class="card-img">
+              <p class="card-title">Top 50 - Global</p>
+              <p class="card-info">Your daily updates of the most played tracks....</p>
+            </div>
+
+            <div class="card">
+              <img src="./assets/card4img.jpeg" alt="card1" class="card-img">
+              <p class="card-title">Top 50 - Global</p>
+              <p class="card-info">Your daily updates of the most played tracks....</p>
+            </div>
+      </div>
+
+
+
+      
+          <h2 tyle="font-weight: 900;">Featured Charts</h2>
+          <div class="cards-container">
+            <div class="card">
+              <img src="./assets/card5img.jpeg" alt="card1" class="card-img">
+              <p class="card-title">Top 50 - Global</p>
+              <p class="card-info">Your daily updates of the most played tracks....</p>
+            </div>
+
+            <div class="card">
+              <img src="./assets/card6img.jpeg" alt="card1" class="card-img">
+              <p class="card-title">Top 50 - Global</p>
+              <p class="card-info">Your daily updates of the most played tracks....</p>
+            </div>
+
+            <div class="card">
+              <img src="./assets/card1img.jpeg" alt="card1" class="card-img">
+              <p class="card-title">Top 50 - Global</p>
+              <p class="card-info">Your daily updates of the most played tracks....</p>
+            </div>
+          </div>
+
+          <div class="footer">
+            <div class="line"></div>
+            </div>
+          </div>
+        </div>
+
+
+      
+      <div class="music-player">
+        <div class="album">
+          <div class="album-img">
+            <img src="assets/album_picture.jpeg" alt="albumimg">
+          </div>
+          <div class="album-content">
+            <p class="songname">Daylight</p>
+            <p class="singername" >Devid Kushner</p>
+          </div>
+          <div class="album-control">
+            <img src="assets/album_icon1.png" alt="icon1" class="album-icon1">
+            <img src="assets/album_icon2.png" alt="icon2" class="album-icon2">
+
+          </div>
+        </div>
+        <div class="player">
+          <div class="player-control">
+            <img src="./assets/player_icon1.png" alt="" class="player-control-icon">
+            <img src="./assets/player_icon2.png" alt="" class="player-control-icon">
+            <img src="./assets/player_icon3.png" alt="" class="player-control-icon" style="opacity: 1; height: 2rem;">
+            <img src="./assets/player_icon4.png" alt="" class="player-control-icon">
+            <img src="./assets/player_icon5.png" alt="" class="player-control-icon">
+          </div>
+          <div class="playback-bar">
+            <span  class="curr-time">00:00</span>
+            <input type="range" max="100" min="0" step="1" class="progress-bar">
+            <span class="tot-time">03:30</span>
+          </div>
+        </div>
+        <div class="controls">
+          <div class="controls-icons">
+            <img src="assets/controls_icon1.png" alt="" class="controls-icon">
+            <img src="assets/controls_icon2.png" alt="" class="controls-icon">
+            <img src="assets/controls_icon3.png" alt="" class="controls-icon" style="height: 30px;">
+            <img src="assets/controls_icon4.png" alt="" class="controls-icon" style="height: 20px;">
+            <img src="assets/controls_icon5.png" alt="" class="controls-icon">
+            <input type="range" min="0" max="100" class="progress-bar" style="width: 30%;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
